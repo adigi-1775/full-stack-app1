@@ -1,19 +1,9 @@
-// const productSchema = new mongoose.Schema({
-//   name: String,
-//   description: String,
-//   img: String,
-//   price: Number,
-//   qty: Number
-// })
-
 const beerSchema = new mongoose.Schema({
-  name: String,
+  name: {type: String, required: true},
   description: String,
   img: String,
-  price: Number,
-  qty: Number
+  style: String,
+  abv: Number
 })
-
-
 const Beer = model('Beer', beerSchema)
 module.exports = Beer
