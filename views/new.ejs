@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>New</h1>
-    <form action="/beer" method="post">
-      Name: <input type="text" name="name"><br/>
-      Description: <input type="text" name="description"><br/>
-      img: <input type="img" name="img"><br/>
-      Style: <input type="text" name="style" value="">
-      ABV: <input type="number" name="abv">
-      <input type="submit" value="Add New Beer!">
-    </form>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <h1>New Beer</h1>
+  <form action="/beer" method="POST">
+    Name: <input type="text" name="name"><br/>
+    Brewery: <input type="text" name="brewery">
+    Description: <input type="text" name="description"><br/>
+    img: <input type="img" name="img"><br/>
+    Style: <input type="text" name="style" value=""><br/>
+    ABV: <input type="number" name="abv"><br/>
+    <input type="submit" value="Add New Beer!">
+  </form>
+</body>
 </html>

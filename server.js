@@ -12,7 +12,7 @@ mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, ()=>{
-  console.log('database connected')
+  // console.log('database connected')
 })
 
 db.on('error', (err)=>{console.log('ERROR', err)})
@@ -24,15 +24,15 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
 
-// const SESSION_SECRET = process.env.SESSION_SECRET
-// app.use(session({secret: SESSION_SECRET, resave: false, saveUninitialized: false}))
+const SESSION_SECRET = process.env.SESSION_SECRET
+app.use(session({secret: SESSION_SECRET, resave: false, saveUninitialized: false}))
 
 //Controllers
 const beerController = require('./controllers/beerController')
 app.use('/beer', beerController)
 
-// const userController = require('./controllers/userController')
-// app.use('/user', userController)
+const userController = require('./controllers/userController')
+app.use('/user', userController)
 
 app.listen(port, ()=>{
   console.log('server listening')

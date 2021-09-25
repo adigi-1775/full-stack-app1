@@ -1,12 +1,22 @@
 <<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1><%=beer.name%></h1>
-    
-    <a href="/beer">Back to Home Page</a>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <h1><%=beer.name%></h1>
+  <div>
+    <img src="<%=beer.img%>">
+    <p><%=beer.brewery%></p>
+    <p>Style: <%=beer.style%></p>
+    <p>ABV: <%=beer.abv%>%</p>
+  </div>
+  <a href="/beer/<%=beer.id%>/edit">Edit <%=beer.name%></a>
+  <a href="/beer">Back to Home Page</a>
+  <form action="/product/<%=product.id%>?_method=DELETE" method="POST">
+    <button>Delete</button>
+  </form>
+</body>
 </html>
