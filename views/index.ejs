@@ -5,6 +5,22 @@
     <title></title>
   </head>
   <body>
-
+    <h1>Beers</h1>
+    <ul>
+      <% for(let i=0; i < beer.length; i++){ %>
+        <li>
+          <a href="/beer/<%= beer[i].id %>"><%= beer[i].name %></a>
+          <a href="/beer/<%=beer[i].id%>"><img src="<%=beer[i].img%>"></a>
+          <a href="/beer/<%= beer[i].id %>/edit">Edit</a>
+         <form action="/beer/<%= beer[i].id %>?_method=DELETE" method='post'>
+           <input type="submit" value="Delete">
+         </form>
+         <br>
+        </li>
+      <% } %>
+    </ul>
+    <form action="index.html" method="post">
+      <a href="beer/new">Add New Beer!</a>
+    </form>
   </body>
 </html>

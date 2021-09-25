@@ -1,4 +1,7 @@
-const beerSchema = new mongoose.Schema({
+const mongoose = require('mongoose')
+const {Schema, model} = mongoose
+
+const beerSchema = mongoose.Schema({
   name: {type: String, required: true},
   description: String,
   img: String,
