@@ -1,6 +1,9 @@
 body{
-  background-color: lightblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+  background-color: lightblue;
 }
 h1{
   font-size: 40px;

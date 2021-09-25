@@ -17,7 +17,7 @@ router.post('/register', (req, res)=>{
     }else{
       User.create(req.body, (error, createdUser)=>{
         req.session.currentUser = createdUser
-        // res.redirect('/beer')
+        res.redirect('/beer')
       })
     }
   })
@@ -32,8 +32,8 @@ router.post('/signin', (req, res)=>{
       const validLogin = bcrypt.compareSync(req.body.password, foundUser.password)
       if(validLogin){
         req.session.currentUser = foundUser
-        res.send('user signed in')
-        // res.redirect('/beer')
+        // res.send('user signed in')
+        res.redirect('/beer')
       }else{
         res.send('Invalid username or password')
       }
