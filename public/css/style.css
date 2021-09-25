@@ -2,6 +2,9 @@ body{
   background-color: lightblue;
   text-align: center;
 }
+h1{
+  font-size: 40px;
+}
 li {
   display: inline-block;
   list-style: none;
@@ -12,7 +15,7 @@ img {
   width: 300px;
   display: inline-block;
 }
-div {
+.beer-img {
   background-color: orange;
   display: inline-block;
   padding: 15px;
@@ -21,5 +24,6 @@ button {
   margin: 15px;
 }
 a {
+  font-size: 19px;
   color: black;
 }

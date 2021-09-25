@@ -6,7 +6,7 @@ const Beer = require('../models/beer')
 router.get('/seed', async (req, res)=>{
   const newBeer = [
     {name: 'Whirlpool', brewry: 'Night Shift', description: 'Fresh, and crisp. Perfect for any season.', img: 'nightshiftbrewing.com/wp-content/uploads/elementor/thumbs/341-NS-Whirlpool-98-edit-copy-scaled-oxu5kp0z4u1ow55v3gmm6n67e61usakh8qxmjeeg1w.jpg', style: 'NEIPA', abv: 4.5},
-    {name: 'Northern Heights', brewery: 'Ten Bends', description: 'Tasty New England Double IPA with Citra, Warrior, Mosaic and Amarillo hops. ', img: '', style: 'DNEIPA', abv: 8},
+    {name: 'Northern Heights', brewery: 'Ten Bends', description: 'Tasty New England Double IPA with Citra, Warrior, Mosaic and Amarillo hops. ', img: 'https://i1.wp.com/weirs.com/wp-content/uploads/2020/03/TenBend-NorthernHeights.jpg?fit=576%2C464&ssl=1', style: 'DNEIPA', abv: 8},
     // {name: , description: , img: , style: , abv: },
     // {name: , description: , img: , style: , abv: },
     // {name: , description: , img: , style: , abv: },
@@ -46,6 +46,15 @@ router.get('/', (req, res)=>{
     res.send(err)
   }
 })
+//New route
+router.get('/new', (req, res)=>{
+  try{
+    res.render('new.ejs')
+  }
+    catch(err){
+      res.send(err)
+  }
+})
 //Show route
 router.get('/:id', (req, res)=>{
   try{
@@ -59,22 +68,6 @@ router.get('/:id', (req, res)=>{
     catch(err){
       res.send(err)
   }
-})
-//New route
-router.get('/new', (req, res)=>{
-  res.render('new.ejs')
-})
-//Post route
-router.post('/', (req, res) => {
-	try{
-		Beer.create(req.body, (err, createdBeer) => {
-			err ? res.send(err)
-			: res.redirect('/beer')
-		})
-	}
-	catch (err) {
-		res.send(err.message)
-	}
 })
 //Edit route
 router.get('/:id/edit', (req, res)=>{
@@ -102,6 +95,18 @@ router.put('/:id', (req, res)=>{
   catch(err){
     res.send(err)
   }
+})
+//Post route
+router.post('/', (req, res) => {
+	try{
+		Beer.create(req.body, (err, createdBeer) => {
+			err ? res.send(err)
+			: res.redirect('/beer')
+		})
+	}
+	catch (err) {
+		res.send(err.message)
+	}
 })
 //Delete route
 router.delete('/:id', (req, res) => {

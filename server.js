@@ -14,7 +14,6 @@ mongoose.connect(MONGODB_URI, {
 }, ()=>{
   // console.log('database connected')
 })
-
 db.on('error', (err)=>{console.log('ERROR', err)})
 db.on('connected', (err)=>{console.log('mongo connected')})
 db.on('disconnected', (err)=>{console.log('mongo disconnected')})
@@ -23,7 +22,9 @@ db.on('disconnected', (err)=>{console.log('mongo disconnected')})
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
+app.use(express.json())
 
+//Sessions
 const SESSION_SECRET = process.env.SESSION_SECRET
 app.use(session({secret: SESSION_SECRET, resave: false, saveUninitialized: false}))
 
@@ -32,8 +33,14 @@ const beerController = require('./controllers/beerController')
 app.use('/beer', beerController)
 
 const userController = require('./controllers/userController')
-app.use('/user', userController)
+app.use('/users', userController)
 
+//Register/Sign in
+app.get('/', (req, res)=>{
+  res.render('welcome.ejs')
+})
+
+//Listen
 app.listen(port, ()=>{
   console.log('server listening')
 })

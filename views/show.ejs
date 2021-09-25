@@ -7,15 +7,15 @@
 </head>
 <body>
   <h1><%=beer.name%></h1>
-  <div>
+  <div class="beer-img">
     <img src="<%=beer.img%>">
     <p><%=beer.brewery%></p>
     <p>Style: <%=beer.style%></p>
     <p>ABV: <%=beer.abv%>%</p>
   </div>
-  <a href="/beer/<%=beer.id%>/edit">Edit <%=beer.name%></a>
-  <a href="/beer">Back to Home Page</a>
-  <form action="/product/<%=product.id%>?_method=DELETE" method="POST">
+  <a href="/beer/<%=beer.id%>/edit">Edit <%=beer.name%></a><br/>
+  <br><a href="/beer">Back to Home Page</a><br/>
+  <br><form action="/beer/<%=beer.id%>?_method=DELETE" method="POST">
     <button>Delete</button>
   </form>
 </body>
