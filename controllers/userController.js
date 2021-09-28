@@ -13,11 +13,11 @@ router.post('/register', (req, res)=>{
   req.body.password = bcrypt.hashSync(req.body.password, salt)
   User.findOne({username: req.body.username}, (error, userExists)=>{
     if(userExists){
-      res.send('That username is already in use.')
+      res.send('That username is already in use. <a href="/">Back</a>')
     }else{
       User.create(req.body, (error, createdUser)=>{
         req.session.currentUser = createdUser
-        res.redirect('/beer')
+        res.redirect('/users/signin')
       })
     }
   })
@@ -35,10 +35,10 @@ router.post('/signin', (req, res)=>{
         // res.send('user signed in')
         res.redirect('/beer')
       }else{
-        res.send('Invalid username or password')
+        res.send('Invalid username or password <a href="/">Back</a>')
       }
     }else{
-      res.send('username or password does not exist')
+      res.send('username or password does not exist <a href="/">Back</a>')
     }
   })
 })

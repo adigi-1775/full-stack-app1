@@ -4,7 +4,6 @@ const app = express()
 const port = process.env.port
 const methodOverride = require('method-override')
 const session = require('express-session')
-const Beer = require('./models/beer')
 const mongoose = require('mongoose')
 const db = mongoose.connection
 const MONGODB_URI = process.env.MONGODB_URI
