@@ -1,13 +1,16 @@
 body{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   background-color: lightblue;
 }
 h1{
   font-size: 40px;
-  color: white;
+}
+h2{
+  font-size: 20px;
+  color: navy;
+  margin-bottom: 90px;
+  margin-left: 220px;
+  margin-right: 220px;
 }
 li {
   display: inline-block;
@@ -16,8 +19,9 @@ li {
   margin: 15px;
 }
 img {
-  width: 300px;
+  width: 450px;
   display: inline-block;
+  margin-bottom: 100px;
 }
 .beer-img {
   background-color: orange;
@@ -29,8 +33,4 @@ button {
 }
 a {
   font-size: 19px;
-  color: white;
-}
-#show-ejs {
-  background-color: green;
 }

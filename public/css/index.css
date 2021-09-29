@@ -1,0 +1,36 @@
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: lightblue;
+}
+h1{
+  font-size: 40px;
+  color: white;
+}
+li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+  margin: 15px;
+}
+img {
+  width: 300px;
+  display: inline-block;
+}
+.beer-img {
+  background-color: orange;
+  display: inline-block;
+  padding: 15px;
+}
+button {
+  margin: 15px;
+}
+a {
+  font-size: 19px;
+  color: white;
+}
+.indxpg{
+  margin-bottom: 50px;
+}
