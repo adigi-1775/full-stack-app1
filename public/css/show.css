@@ -1,0 +1,98 @@
+body{
+  text-align: center;
+  background-color: lightblue;
+}
+h1{
+  font-size: 40px;
+}
+li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+  margin: 15px;
+}
+img {
+  width: 300px;
+  display: inline-block;
+}
+.beer-img {
+  background-color: black;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+}
+button {
+  margin: 15px;
+}
+a {
+  font-size: 19px;
+}
+p{
+  display: block;
+}
+
+/*code below from: https://www.prowaretech.com/Computer/Html/Css/FiveStarRating*/
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.center {
+	min-height: 10vh;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+.rating input {
+	display: none;
+}
+.rating {
+	display: flex;
+}
+.rating > label {
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	color: yellow;
+	font-family: sans-serif;
+	opacity: 0.33;
+	transition: opacity .2s;
+}
+#star-1:checked ~ label[for="star-1"],
+#star-1:hover ~ label[for="star-1"],
+#star-2:checked ~ label[for="star-1"],
+#star-2:checked ~ label[for="star-2"],
+#star-2:hover ~ label[for="star-1"],
+#star-2:hover ~ label[for="star-2"],
+
+#star-3:checked ~ label[for="star-1"],
+#star-3:checked ~ label[for="star-2"],
+#star-3:checked ~ label[for="star-3"],
+#star-3:hover ~ label[for="star-1"],
+#star-3:hover ~ label[for="star-2"],
+#star-3:hover ~ label[for="star-3"],
+
+#star-4:checked ~ label[for="star-1"],
+#star-4:checked ~ label[for="star-2"],
+#star-4:checked ~ label[for="star-3"],
+#star-4:checked ~ label[for="star-4"],
+#star-4:hover ~ label[for="star-1"],
+#star-4:hover ~ label[for="star-2"],
+#star-4:hover ~ label[for="star-3"],
+#star-4:hover ~ label[for="star-4"],
+
+#star-5:checked ~ label[for="star-1"],
+#star-5:checked ~ label[for="star-2"],
+#star-5:checked ~ label[for="star-3"],
+#star-5:checked ~ label[for="star-4"],
+#star-5:checked ~ label[for="star-5"],
+#star-5:hover ~ label[for="star-1"],
+#star-5:hover ~ label[for="star-2"],
+#star-5:hover ~ label[for="star-3"],
+#star-5:hover ~ label[for="star-4"],
+#star-5:hover ~ label[for="star-5"] {
+	opacity: 15;
+}
