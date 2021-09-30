@@ -6,7 +6,7 @@ body{
   background-color: lightblue;
 }
 h1{
-  font-size: 40px;
+  font-size: 5-px;
   color: white;
 }
 li {
@@ -21,17 +21,16 @@ img {
   display: inline-block;
 }
 .beerimg {
-  background-color: green;
+  border-radius: 10%;
+  filter: drop-shadow(20px 10px 4px green);
   display: inline-block;
   padding: 9px;
   width: 300px;
 }
-button {
-  margin: 15px;
-}
 a {
-  font-size: 19px;
+  font-size: 25px;
   color: white;
+  text-decoration: none;
 }
 .indxpg{
   margin-bottom: 50px;

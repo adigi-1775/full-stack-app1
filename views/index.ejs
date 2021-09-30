@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 </head>
 <body style="background-image: url('https://www.tapsandcaps.com/wp-content/uploads/2019/03/shutterstock_1212903172.jpg')">
   <h1>Beers</h1>
@@ -12,7 +18,7 @@
       <li>
         <a href="/beer/<%=beer[i].id%>"><img class="beerimg" src="<%=beer[i].img%>"></a><br/>
         <br><a href="/beer/<%= beer[i].id%>"><%= beer[i].name %></a><br/>
-        <br><a href="/beer/<%=beer[i].id%>/edit"><button>Edit</button></a>
+        <br><a class="button button-primary" href="/beer/<%=beer[i].id%>/edit"><button>Edit</button></a>
        <form action="/beer/<%=beer[i].id%>?_method=DELETE" method='POST'>
          <input type="submit" value="DELETE">
        </form>
