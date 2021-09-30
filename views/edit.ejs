@@ -4,35 +4,42 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="/css/edit.css">
-  </head>
-  <body>
+</head>
+<body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF8PdJxbPlXH5hdupX7pyF-QeQFCMaLI2xVA&usqp=CAU')">
     <h1>Edit Beer</h1>
-    <form action="/beer/<%= beer.id %>?_method=PUT" method="POST">
+  <div id="editbeerbox">
+    <br><form action="/beer/<%= beer.id %>?_method=PUT" method="POST">
+      <br>
       Name:
         <input
         type="text"
         name="name"
         value="<%=beer.name%>"><br/>
+      <br>
       Brewery:
         <input
         type="text"
         name="brewery"
         value="<%=beer.brewery%>"><br/>
+        <br>
       Description:
         <input
         type="text"
         name="description"
         value="<%=beer.description%>"><br/>
+        <br>
       Img:
         <input
         type="img"
         name="img"
         value="<%=beer.img%>"><br/>
+        <br>
       Style:
         <input
         type="text"
         name="style"
         value="<%=beer.style%>"><br/>
+        <br>
       ABV:
         <input
         type="number"
@@ -40,5 +47,7 @@
         value="<%=beer.abv%>"><br/>
       <button type="submit">Update <%=beer.name%></button>
     </form>
-  </body>
+  </div>
+    <br><a id="back" href="/beer">Back to Home Page</a>
+</body>
 </html>
