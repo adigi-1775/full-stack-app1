@@ -1,9 +1,14 @@
 body{
   text-align: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-color: lightblue;
 }
 h1{
-  font-size: 40px;
+  font-size: 60px;
+  color: black;
+  font-family: 'Stick No Bills', sans-serif;
 }
 li {
   display: inline-block;
@@ -11,24 +16,54 @@ li {
   padding: 15px;
   margin: 15px;
 }
-img {
-  width: 300px;
+.center {
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 7%;
+  width: 90%;
+  height: 50%;
+  border-style: solid;
 }
 .beer-img {
   background-color: black;
   display: inline-block;
   padding: 15px;
   color: white;
-  border-radius: 7%;
 }
 button {
   margin: 15px;
 }
 a {
   font-size: 19px;
+  font-family: 'Crimson Text', serif;
 }
 p{
   display: block;
+  font-family: 'Crimson Text', serif;
+}
+#newbeerbox {
+  background-color: rgba(156, 210, 225, 0.65);
+  max-width: 300px;
+  display: flex;
+  margin: auto;
+  padding: 9px;
+  border-style: solid;
+  border-radius: 6%;
+}
+#back {
+  color: blue;
+  text-decoration: none;
+}
+.body-container{
+  position: relative;
+}
+.positioning{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

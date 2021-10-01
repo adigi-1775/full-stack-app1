@@ -6,8 +6,9 @@ body{
   background-color: lightblue;
 }
 h1{
-  font-size: 40px;
+  font-size: 60px;
   color: black;
+  font-family: 'Stick No Bills', sans-serif;
 }
 li {
   display: inline-block;
@@ -35,9 +36,11 @@ button {
 }
 a {
   font-size: 19px;
+  font-family: 'Crimson Text', serif;
 }
 p{
   display: block;
+  font-family: 'Crimson Text', serif;
 }
 #editbeerbox {
   background-color: rgba(156, 210, 225, 0.65);

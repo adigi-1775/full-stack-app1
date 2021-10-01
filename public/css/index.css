@@ -1,13 +1,14 @@
 body{
-  background-position: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkBqbB-1oK2sfzZbbePGO3jh0kKnf8GlAIRA&usqp=CAU);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  background-color: lightblue;
 }
 h1{
   font-size: 5-px;
   color: white;
+  font-family: 'Stick No Bills', sans-serif;
 }
 li {
   display: inline-block;
@@ -33,6 +34,7 @@ a {
   font-size: 25px;
   color: white;
   text-decoration: none;
+  font-family: 'Crimson Text', serif;
 }
 .indxpg{
   margin-bottom: 50px;

@@ -182,7 +182,7 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: red;
+  background-color: orange;
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
@@ -205,7 +205,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
+  color: black;
   background-color: #33C3F0;
   border-color: #33C3F0; }
 .button.button-primary:hover,

@@ -4,17 +4,31 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="/css/new.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>New Beer</h1>
+  <h1>Add New Beer</h1>
+  <div class="body-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkTraAq6MsCyEEiAbPNMz6zGSTThW-IY2xw&usqp=CAU" class="center">
+    <div class="positioning">
+  <div id="newbeerbox">
   <form action="/beer" method="POST">
-    Name: <input type="text" name="name"><br/>
-    Brewery: <input type="text" name="brewery"><br/>
-    Description: <input type="text" name="description"><br/>
-    img: <input type="img" name="img"><br/>
-    Style: <input type="text" name="style" value=""><br/>
-    ABV: <input type="number" name="abv"><br/>
+    <br>Name: <input type="text" name="name"><br/>
+    <br>Brewery: <input type="text" name="brewery"><br/>
+    <br>Description: <input type="text" name="description"><br/>
+    <br>img: <input type="img" name="img"><br/>
+    <br>Style: <input type="text" name="style" value=""><br/>
+    <br>ABV: <input type="number" name="abv"><br/>
     <br><input type="submit" value="Add New Beer!">
-  </form>
+  </form><br/>
+</div>
+  </div>
+</div>
+  <br><a id="back" href="/beer">Back to Home Page</a>
 </body>
 </html>
