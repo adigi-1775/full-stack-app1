@@ -14,12 +14,14 @@ li {
 img {
   width: 300px;
   display: inline-block;
+  border-radius: 7%;
 }
 .beer-img {
   background-color: black;
   display: inline-block;
   padding: 15px;
   color: white;
+  border-radius: 7%;
 }
 button {
   margin: 15px;

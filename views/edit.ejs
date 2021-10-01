@@ -5,8 +5,11 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="/css/edit.css">
 </head>
-<body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF8PdJxbPlXH5hdupX7pyF-QeQFCMaLI2xVA&usqp=CAU')">
-    <h1>Edit Beer</h1>
+<body>
+    <h1>Edit <%=beer.name%></h1>
+<div class="body-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7NvLcdpMsJ2cST8Q_wAeSnBx2fLQZLxnrDw&usqp=CAU" class="center">
+    <div class="positioning">
   <div id="editbeerbox">
     <br><form action="/beer/<%= beer.id %>?_method=PUT" method="POST">
       <br>
@@ -47,7 +50,9 @@
         value="<%=beer.abv%>"><br/>
       <button type="submit">Update <%=beer.name%></button>
     </form>
-  </div>
+  </div><br/>
+</div>
+</div>
     <br><a id="back" href="/beer">Back to Home Page</a>
 </body>
 </html>
