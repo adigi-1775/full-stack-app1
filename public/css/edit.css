@@ -22,6 +22,7 @@ li {
   border-radius: 7%;
   width: 90%;
   height: 50%;
+  border-style: solid;
 }
 .beer-img {
   background-color: black;

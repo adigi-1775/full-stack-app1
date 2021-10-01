@@ -15,6 +15,9 @@ img {
   width: 300px;
   display: inline-block;
   border-radius: 7%;
+  border: 9px;
+  border-style: solid;
+  border-color: lightgreen;
 }
 .beer-img {
   background-color: black;
