@@ -31,7 +31,11 @@ li {
   padding: 15px;
   color: white;
 }
+input{
+  background-color: lightblue;
+}
 button {
+  background-color: lightgreen;
   margin: 15px;
 }
 a {

@@ -31,8 +31,11 @@ li {
   padding: 15px;
   color: white;
 }
-button {
-  margin: 15px;
+input{
+  background-color: lightblue;
+}
+#btn{
+  background-color: lightgreen;
 }
 a {
   font-size: 19px;
