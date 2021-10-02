@@ -29,6 +29,8 @@ img {
 }
 button {
   margin: 15px;
+  padding: 3px;
+  background-color: crimson;
 }
 a {
   font-size: 19px;

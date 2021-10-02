@@ -35,7 +35,10 @@ input{
   background-color: lightblue;
 }
 #btn{
+  border-radius: 10%;
+  border: 2px black solid;
   background-color: lightgreen;
+  padding: 4px;
 }
 a {
   font-size: 19px;
